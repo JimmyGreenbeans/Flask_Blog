@@ -25,7 +25,7 @@ def home():
 
 @app.route("/about") # mit dem Slash ist die Stammwebseite gemeint aka Homepage
 def about():
-    return render_template('about.html')
+    return render_template('about.html', title='About')
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', debug=True)
